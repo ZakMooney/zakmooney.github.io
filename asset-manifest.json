@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/zak-reactjs/static/css/main.114b0842.chunk.css",
-    "main.js": "/zak-reactjs/static/js/main.7a8bae77.chunk.js",
-    "main.js.map": "/zak-reactjs/static/js/main.7a8bae77.chunk.js.map",
-    "runtime-main.js": "/zak-reactjs/static/js/runtime-main.61c9181d.js",
-    "runtime-main.js.map": "/zak-reactjs/static/js/runtime-main.61c9181d.js.map",
-    "static/js/2.2d5f3f87.chunk.js": "/zak-reactjs/static/js/2.2d5f3f87.chunk.js",
-    "static/js/2.2d5f3f87.chunk.js.map": "/zak-reactjs/static/js/2.2d5f3f87.chunk.js.map",
-    "index.html": "/zak-reactjs/index.html",
-    "static/css/main.114b0842.chunk.css.map": "/zak-reactjs/static/css/main.114b0842.chunk.css.map",
-    "static/js/2.2d5f3f87.chunk.js.LICENSE.txt": "/zak-reactjs/static/js/2.2d5f3f87.chunk.js.LICENSE.txt",
-    "static/media/moon.998bb464.svg": "/zak-reactjs/static/media/moon.998bb464.svg"
+    "main.css": "/static/css/main.114b0842.chunk.css",
+    "main.js": "/static/js/main.7a8bae77.chunk.js",
+    "main.js.map": "/static/js/main.7a8bae77.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f005bc4f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f005bc4f.js.map",
+    "static/js/2.2d5f3f87.chunk.js": "/static/js/2.2d5f3f87.chunk.js",
+    "static/js/2.2d5f3f87.chunk.js.map": "/static/js/2.2d5f3f87.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.114b0842.chunk.css.map": "/static/css/main.114b0842.chunk.css.map",
+    "static/js/2.2d5f3f87.chunk.js.LICENSE.txt": "/static/js/2.2d5f3f87.chunk.js.LICENSE.txt",
+    "static/media/moon.998bb464.svg": "/static/media/moon.998bb464.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.61c9181d.js",
+    "static/js/runtime-main.f005bc4f.js",
     "static/js/2.2d5f3f87.chunk.js",
     "static/css/main.114b0842.chunk.css",
     "static/js/main.7a8bae77.chunk.js"
