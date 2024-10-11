@@ -1,8 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { create } from "zustand";
 
-export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+export const useStoredTheme = create((set) => {
+  return {
+    storedTheme: 'dark',
+    setStoredTheme: (storedTheme) => set(() => {
+      return {
+        storedTheme: storedTheme
+      }
+    }),
+  };
 });
