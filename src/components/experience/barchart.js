@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -123,13 +123,6 @@ const BarChart = () => {
           'rgba(254, 240, 138, 0.8)',
         ],
         borderRadius: 4,
-        // backgroundColor: (context) => {
-        //   const ctx = context.chart.ctx;
-        //   const gradient = ctx.createLinearGradient(0, 0, 0, 200);
-        //   gradient.addColorStop(0, "rgba(246, 0, 157, 1)");
-        //   gradient.addColorStop(1, "rgba(246, 0, 157, 1)");
-        //   return gradient;
-        // },
       },
     ],
   };

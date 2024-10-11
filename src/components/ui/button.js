@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Button = (props) => {
-  const {onClick, icon, text, style, large} = props;
+  const {onClick, icon, text, type, large} = props;
 
   let useClasses;
 
-  switch (style) {
+  switch (type) {
     case 'ghost':
       useClasses = 'flex items-center justify-center button btn-ghost'
       break;
@@ -15,9 +15,6 @@ const Button = (props) => {
     case 'pink':
       useClasses = 'flex items-center justify-center button btn-pink-gradient'
       break;
-    case 'pink':
-      useClasses = 'flex items-center justify-center button btn-pink-gradient'
-      break;  
     default:
       useClasses = 'flex items-center justify-center button'
       break;

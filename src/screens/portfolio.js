@@ -37,6 +37,7 @@ function Portfolio() {
         <div className="flex justify-center">
           <img
             src={source}
+            alt=""
             width='100%'
             height='100%'
             style={{maxHeight: "70vh", width: "auto"}}
