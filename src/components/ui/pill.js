@@ -4,7 +4,7 @@ const Pill = (props) => {
   const {text} = props;
 
   return (
-    <div className="pill text-sm py-1 px-3 drop-drop-shadow-md">
+    <div className="pill py-1 px-2 sm:py-1 sm:px-3 drop-drop-shadow-md text-xs sm:text-sm">
       {text}
     </div>
   );

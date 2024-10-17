@@ -74,26 +74,26 @@ const PortfolioModal = (props) => {
           handleCloseModal();
         }}
       >
-        <div className="min-h-[250px] max-h-[250px] bg-slate-700/50 overflow-hidden mb-4 rounded">
+        <div className="min-h-[180px] max-h-[180px] sm:max-h-[250px] sm:min-h-[250px] bg-slate-700/50 overflow-hidden mb-2 sm:mb-4 rounded">
           <img src={thumbnail || ''} alt={title || ''} className="h-full w-full object-cover"></img>
         </div>
 
-        <h3 className="w-full text-xl font-medium drop-shadow-sm pb-2 flex justify-between">
+        <h3 className="w-full font-medium drop-shadow-sm pb-2 flex justify-between text-lg sm:text-xl">
           {title || ''}
           <span className="text-md font-light opacity-80 text-right">
             {start || ''}
           </span>
         </h3>
-        <h4 className="w-full text-md font-light italic drop-shadow-sm pb-2 opacity-80">
+        <h4 className="w-full text-xs sm:text-sm font-light italic drop-shadow-sm pb-2 opacity-80">
           {description || ''}
         </h4>
-        <ul className="list-disc pl-4 font-light opacity-80 pb-4 w-full">
+        <ul className="list-disc pl-4 text-sm sm:text-md font-light opacity-80 pb-2 sm:pb-4 w-full">
           {taskLoop}
         </ul>
         <div className="w-full flex flex-wrap gap-2">
           {techLoop}
         </div>
-        <div className="w-full flex flex-wrap mt-4 gap-4 justify-end">
+        <div className="w-full flex flex-wrap mt-2 sm:mt-4 gap-4 justify-end">
           <Button
             onClick={() => handleCloseModal()}
             text="Close"

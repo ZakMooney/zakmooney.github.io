@@ -444,7 +444,7 @@ h1.neon-text {
   @include border-radius(9001px);
   box-shadow: rgba(var(--theme-pill-colour), 0) 0px 4px 10px 0px;
   color: rgba(var(--theme-pill-colour), 1);
-  height: 28px;
+  // height: 28px;
   max-height: 28px;
   &:before {
     content: '';
