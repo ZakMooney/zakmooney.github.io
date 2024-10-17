@@ -35,8 +35,8 @@ const Modal = (props) => {
           <div
             className={"z-40 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-full px-4 " + (wide ? "max-w-[62rem]" : "max-w-[34rem]") }
           >
-            <Card className="w-full max-h-[90vh] modal-frost">
-              <div className="card-body overflow-scroll">
+            <Card className="w-full max-h-[90vh] modal-frost overflow-auto">
+              <div className="card-body">
                 {props.children}
               </div>
             </Card>
