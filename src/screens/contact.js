@@ -8,7 +8,7 @@ function Contact() {
   return (
     <>
       <div className="w-full">
-        <h1 className="text-3xl font-medium drop-shadow-sm mb-4">
+        <h1 className="text-3xl font-medium drop-shadow-sm mb-2">
           Get In Touch <img src={envelope} alt={'Get In Touch'} className="mb-2 h-[30px] w-[30px] inline-block"></img>
         </h1>
       </div>

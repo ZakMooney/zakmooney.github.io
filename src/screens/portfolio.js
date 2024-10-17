@@ -75,7 +75,7 @@ function Portfolio() {
 
   return (
     <>
-      <h1 className="text-3xl font-medium drop-shadow-sm mb-4">
+      <h1 className="text-3xl font-medium drop-shadow-sm mb-2">
         Portfolio & Works <img src={computer} alt={'Portfolio & Works'} className="mb-2 h-[30px] w-[30px] inline-block"></img>
       </h1>
 
