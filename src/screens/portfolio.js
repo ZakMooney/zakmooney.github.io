@@ -75,7 +75,7 @@ function Portfolio() {
   return (
     <>
       <h1 className="text-3xl font-medium drop-shadow-sm mb-4">
-        Portfolio & Works 🖥
+        Portfolio & Works 🖥️
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

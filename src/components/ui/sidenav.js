@@ -37,7 +37,7 @@ const SideNav = (props) => {
             linkTo="/experience"
           />
           <ButtonNav
-            linkIcon="🖥"
+            linkIcon="️🖥"
             linkText="Portfolio"
             linkTo="/portfolio"
           />
