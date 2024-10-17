@@ -6,7 +6,7 @@ import './components/styles.scss';
 import App from './App';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
 } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

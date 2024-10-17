@@ -25,19 +25,21 @@ function LandingLoader(props) {
   }
 
   return (
-    <div id="star-bg">
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-      <div
-        id="loading"
-        className="text-2xl font-medium drop-shadow-sm"
-      >Launching</div>
-      <div id="rocket">
-        <FontAwesomeIcon
-          icon={faShuttleSpace}
-          color="#ffffff"
-        />
+    <div id="star-bg-con">
+      <div id="star-bg">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div
+          id="loading"
+          className="text-2xl font-medium drop-shadow-sm"
+        >Launching</div>
+        <div id="rocket">
+          <FontAwesomeIcon
+            icon={faShuttleSpace}
+            color="#ffffff"
+          />
+        </div>
       </div>
     </div>
   );

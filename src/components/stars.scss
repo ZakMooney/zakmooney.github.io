@@ -13,10 +13,33 @@ $shadows-small: multiple-box-shadow(400);
 $shadows-medium: multiple-box-shadow(200);
 $shadows-big: multiple-box-shadow(100);
 
+#star-bg-con {
+  position: relative;
+  height: 100%;
+  width: 1920px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
 #star-bg {
   position: relative;
   height: 100%;
-  width: 100%;
+  width: 1920px;
   background: linear-gradient(
     184deg,
     rgba(78, 109, 244, 0.3) 0%,
@@ -48,7 +71,10 @@ $shadows-big: multiple-box-shadow(100);
 #st-star-bg {
   position: absolute;
   height: 100vh;
-  width: 100%;
+  width: 1920px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   mask-image: linear-gradient(#000 0%, transparent 60%);
   z-index: -2;
 }
