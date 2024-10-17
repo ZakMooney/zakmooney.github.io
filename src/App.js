@@ -16,6 +16,12 @@ import ThemeHandler from "./components/themehandler";
 
 import './components/stars.scss';
 
+const isPC = navigator?.userAgentData?.platform?.toUpperCase().indexOf('WIN') >= 0;
+
+if (isPC) {
+  import('./components/pcscroll.scss');
+}
+
 export default function App() {
   return (
     <ThemeHandler>
