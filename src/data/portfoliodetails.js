@@ -34,31 +34,6 @@ import portThumbnail from "../assets/portfolio/PORT-Thumbnail.png";
 
 export const WorkDetails = [
   {
-    tag: 'PORTFOLIO',
-    title: 'Portfolio Dashboard',
-    company: 'Personal',
-    description: 'ReactJS Frontend Developer Portfolio Dashboard',
-    start: 'July 2024',
-    end: 'Current',
-    tasks: [
-      'Fully responsive mobile-first portfolio dashboard with Light & Dark themes.',
-      'Focus on components & data driven implementation.',
-    ],
-    mainTech: [
-      'ReactJS',
-    ],
-    tech: [
-      'ReactJS',
-      'Tailwind',
-      'HTML',
-      'SCSS'
-    ],
-    thumbnail: portThumbnail,
-    images: [],
-    captions: [],
-    link: 'https://github.com/ZakMooney/defi-tst-dapp',
-  },
-  {
     tag: 'WEB3_DAPP',
     title: 'Whitelabel Web3 Dashboard',
     company: 'The Standard',
@@ -96,6 +71,31 @@ export const WorkDetails = [
       'Responsive mobile dashboard layout, and light mode demonstration.',
       'Example of customised frontend forked from decentralised frontend with additional styles and functionality.',
     ],
+    link: 'https://github.com/ZakMooney/defi-tst-dapp',
+  },
+  {
+    tag: 'PORTFOLIO',
+    title: 'Portfolio Dashboard',
+    company: 'Personal',
+    description: 'ReactJS Frontend Developer Portfolio Dashboard',
+    start: 'July 2024',
+    end: 'Current',
+    tasks: [
+      'Fully responsive mobile-first portfolio dashboard with Light & Dark themes.',
+      'Focus on components & data driven implementation.',
+    ],
+    mainTech: [
+      'ReactJS',
+    ],
+    tech: [
+      'ReactJS',
+      'Tailwind',
+      'HTML',
+      'SCSS'
+    ],
+    thumbnail: portThumbnail,
+    images: [],
+    captions: [],
     link: 'https://github.com/ZakMooney/defi-tst-dapp',
   },
   {
