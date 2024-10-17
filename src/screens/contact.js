@@ -2,13 +2,14 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import envelope from '../assets/emoji/envelope.png';
 
 function Contact() {
   return (
     <>
       <div className="w-full">
         <h1 className="text-3xl font-medium drop-shadow-sm mb-4">
-          Get In Touch ✉️
+          Get In Touch <img src={envelope} alt={'Get In Touch'} className="mb-2 h-[30px] w-[30px] inline-block"></img>
         </h1>
       </div>
       <div className="w-full">

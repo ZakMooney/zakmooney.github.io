@@ -3,12 +3,13 @@ import Card from '../components/ui/card';
 import ExperienceItem from '../components/experience/experienceitem';
 import { JobDetails } from '../data/jobdetails';
 import ButtonLink from '../components/ui/buttonlink';
+import astronaut from '../assets/emoji/astronaut.png';
 
 function About() {
   return (
     <>
       <h1 className="text-3xl font-medium drop-shadow-md mb-4">
-        About Me 👨🏻‍🚀
+        About Me <img src={astronaut} alt={'About Me'} className="mb-2 h-[30px] w-[30px] inline-block"></img>
       </h1>
       <Card className="about">
         <div className="w-full">

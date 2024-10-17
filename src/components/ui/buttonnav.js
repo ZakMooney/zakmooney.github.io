@@ -13,7 +13,7 @@ const ButtonNav = (props) => {
     >
       {linkIcon ? (
         <span
-          className="mr-0 sm:mr-3 nl-i text-sm sm:text-xl"
+          className="mr-0 mb-1 sm:mb-0 sm:mr-3 nl-i max-h-6 max-w-[16px] sm:max-w-[20px] flex"
         >
           {linkIcon}
         </span>
@@ -21,7 +21,7 @@ const ButtonNav = (props) => {
         null
       )}
       <span
-        className="text-sm sm:text-md"
+        className="w-full text-sm sm:text-md"
       >
         {linkText || ''}
       </span>

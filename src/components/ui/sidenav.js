@@ -6,6 +6,11 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import ButtonNav from './buttonnav';
 import ThemeToggle from './themetoggle';
 import me from '../../assets/images/me.jpg';
+import astronaut from '../../assets/emoji/astronaut.png';
+import computer from '../../assets/emoji/computer.png';
+import envelope from '../../assets/emoji/envelope.png';
+import man from '../../assets/emoji/man.png';
+import rocket from '../../assets/emoji/rocket.png';
 
 const SideNav = (props) => {
 
@@ -21,28 +26,28 @@ const SideNav = (props) => {
               Zak M.
             </h2>
             <p className="text-sm opacity-50 font-medium drop-shadow-sm">
-              Frontend Dev 🚀
+              Frontend Dev <img src={rocket} alt={'Frontend Dev'} className="mb-1 h-[14px] w-[14px] inline-block"></img>
             </p>
           </div>
         </div>
         <div className="flex sm:flex-col overflow-hidden content-center justify-between">
           <ButtonNav
-            linkIcon="👨🏻‍🚀"
+            linkIcon={<img src={astronaut} alt={'About'} className="h-auto w-auto object-contain"></img>}
             linkText="About"
             linkTo="/about"
           />
           <ButtonNav
-            linkIcon="👨🏻‍💻"
+            linkIcon={<img src={man} alt={'Experience'} className="h-auto w-auto object-contain"></img>}
             linkText="Experience"
             linkTo="/experience"
           />
           <ButtonNav
-            linkIcon="️🖥"
+            linkIcon={<img src={computer} alt={'Portfolio'} className="h-auto w-auto object-contain"></img>}
             linkText="Portfolio"
             linkTo="/portfolio"
           />
           <ButtonNav
-            linkIcon="✉️"
+            linkIcon={<img src={envelope} alt={'Contact'} className="h-auto w-auto object-contain"></img>}
             linkText="Contact"
             linkTo="/contact"
           />

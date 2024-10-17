@@ -4,6 +4,7 @@ import PieChart from '../components/experience/piechart';
 import ExperienceItem from '../components/experience/experienceitem';
 import { JobDetails } from '../data/jobdetails';
 import Card from '../components/ui/card';
+import man from '../assets/emoji/man.png';
 
 function Experience() {
 
@@ -19,7 +20,7 @@ function Experience() {
     <>
       <div className="w-full mb-4">
         <h1 className="text-3xl font-medium drop-shadow-sm mb-4">
-          Experience & Skills 👨🏻‍💻
+          Experience & Skills <img src={man} alt={'Experience & Skills'} className="mb-2 h-[30px] w-[30px] inline-block"></img>
         </h1>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
           <Card className="mb-0 sm:mb-0">

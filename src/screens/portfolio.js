@@ -4,6 +4,7 @@ import FsLightbox from "fslightbox-react";
 import Card from '../components/ui/card';
 import PortfolioItem from '../components/portfolio/portfolioitem';
 import PortfolioModal from '../components/portfolio/portfoliomodal';
+import computer from '../assets/emoji/computer.png';
 
 
 import { WorkDetails } from '../data/portfoliodetails';
@@ -75,7 +76,7 @@ function Portfolio() {
   return (
     <>
       <h1 className="text-3xl font-medium drop-shadow-sm mb-4">
-        Portfolio & Works 🖥️
+        Portfolio & Works <img src={computer} alt={'Portfolio & Works'} className="mb-2 h-[30px] w-[30px] inline-block"></img>
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
