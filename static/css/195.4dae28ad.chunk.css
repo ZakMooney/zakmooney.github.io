@@ -1,0 +1,2 @@
+:root{--sb-track-color:transparent;--sb-thumb-color:#ffffff80;--sb-size:8px}::-webkit-scrollbar{width:8px;width:var(--sb-size)}::-webkit-scrollbar-track{background:transparent;background:var(--sb-track-color);border-radius:16px}::-webkit-scrollbar-thumb{background:#ffffff80;background:var(--sb-thumb-color);border-radius:16px}@supports not selector(::-webkit-scrollbar){:root{scrollbar-color:#ffffff80 transparent;scrollbar-color:var(--sb-thumb-color) var(--sb-track-color)}}
+/*# sourceMappingURL=195.4dae28ad.chunk.css.map*/
