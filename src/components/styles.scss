@@ -5,6 +5,16 @@
   -ms-border-radius: $radius;
 }
 
+:root {
+  --max-height: 100dvh;
+}
+
+@supports(height: 100dvh) {
+  :root {
+    --maxHeight: 100vh;
+  }
+}
+
 html {
   height: -webkit-fill-available;
 }
@@ -17,7 +27,7 @@ body {
     radial-gradient(ellipse at bottom, rgb(var(--theme-background-dark)) 0%, rgb(var(--theme-background-light)) 100%);
   margin: 0;
   position: relative;
-  min-height: 100vh;
+  min-height: var(--max-height);
   min-height: -webkit-fill-available;
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
@@ -45,9 +55,9 @@ body {
 }
 
 #root {
-  height: 100vh;
+  height: var(--max-height);
   width: 100vw;
-  min-height: 100vh;
+  min-height: var(--max-height);
   min-height: -webkit-fill-available;
   min-width: 100vw;
   min-width: -webkit-fill-available;
@@ -55,7 +65,7 @@ body {
 
 .content {
   max-width: 1440px;
-  max-height: 100vh;
+  max-height: var(--max-height);
   margin: auto;
 }
 
