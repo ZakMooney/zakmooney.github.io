@@ -1,46 +1,90 @@
-# Getting Started with Create React App and Redux
+# Frontend Dev Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This is a personal portfolio website built with react, in the style of a dashboard, intended to showcase my personal CV and experience in a visual manner and display examples of my work through the portfolio section.
 
-## Available Scripts
+## Contents
+
+- [Features](#features)
+- [Dev Details](#dev-details)
+- [Scripts](#scripts)
+- [Adding New Work Experience](#adding-new-work-experience)
+- [Adding New Portfolio Items](#adding-new-portfolio-items)
+
+___
+
+## Features
+
+- Dynamic data rendered from shared json objects.
+- Initial loader animation to simulate loading data.
+- Responsive mobile-first design that works on a variety of screen sizes.
+- Used HashedRouter to enable SPA support with GitHub pages
+- Distinct Dark & Light themes.
+- Built with React & TailwindCSS.
+- Reusable UI components.
+
+___
+
+## Installation
+
+To run the project locally, follow these steps:
+
+1. Clone the repo:
+
+   ```
+   git clone https://github.com/ZakMooney/zakmooney.github.io.git
+   cd zakmooney.github.io
+   ```
+
+2. Install the dependencies:
+
+   ```
+   npm install
+   ```
+
+3. Start the dev server:
+
+   ```
+   npm start
+   ```
+
+4. Visit `http://localhost:3000`.
+
+___
+
+## Dev Details
+
+This repo was created with [Create React App](https://github.com/facebook/create-react-app). Chart components are from [react-chartjs-2](https://www.npmjs.com/package/react-chartjs-2). Icons used are a mixture of Apple Emoji & [FontAwesome](https://www.npmjs.com/package/@fortawesome/react-fontawesome). The stars animation is a customised version of [this codepen](https://codepen.io/sarazond/pen/LYGbwj). Page transitions implemented using [framer-motion](https://www.npmjs.com/package/framer-motion). Image lightbox/gallery implemented using [fslightbox-react](https://www.npmjs.com/package/fslightbox-react).
+
+___
+
+## Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+- `npm start`: Starts the dev server.
+- `npm run build`: Builds for production in the `build` folder.
+- `npm run eject`: One-way operation. Removes the single build dependency from the project.
+- `npm run predeploy`: Runs the build script.
+- `npm run deploy`: Deploys the app to GitHub Pages.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+___
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Adding New Work Experience
 
-### `npm test`
+1. Add the job data object to `JobDetails` in `/src/data/jobdetails.js`
+2. Update `SkillYears` in `/src/data/jobdetails.js` if relevant for "Key Skill Expierience" Bar Chart
+3. Update `RoleYears` in `/src/data/jobdetails.js` if releveant for "Key Role Experience" Pie Chart
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+___
 
-### `npm run build`
+## Adding New Portfolio Items
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Add any images & videos to `/src/assets/portfolio`
+2. Import the images into `/src/data/portfoliodetails.js`
+3. Add the work data object to `PortfolioDetails` in `/src/data/portfoliodetails.js`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+___
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is released under the MIT License.

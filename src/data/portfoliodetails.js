@@ -32,13 +32,26 @@ import web3Customised from "../assets/portfolio/WEB3-Customised.png";
 
 import portThumbnail from "../assets/portfolio/PORT-Thumbnail.png";
 
-export const WorkDetails = [
+export const PortfolioDetails = [
+  // {
+  //   tag: '', // string used as an identifier
+  //   title: '', // string used as main header for work item
+  //   description: '', // string used as sub header for work item
+  //   date: '', // string used to display a date for the work item modal
+  //   tasks: [], // array of strings used to generate a bullet point list describing the work item
+  //   mainTech: [], // array of strings used to populate the pills in the main portfolio list. Recommended to use just one item.
+  //   tech: [], // array of strings used to populate the full list of pills shown in the work item modal.
+  //   thumbnail: null, // image import that you want to use for the work item image.
+  //   images: [], // array of image imports for the work item modal's lightbox/gallery
+  //   captions: [], // array of strings to be used as captions for the lightbox/gallery images. They are matched by index, so order matters.
+  //   link: '', // optional string that is used for a github button.
+  // },
   {
     tag: 'WEB3_DAPP',
     title: 'Whitelabel Web3 Dashboard',
     company: 'The Standard',
     description: 'Quick start whitelabel Web3 dashboard for Ethereum DApp',
-    start: 'Aug 2023',
+    date: 'Aug 2023',
     end: 'Current',
     tasks: [
       'Focus on simple, customisable, and reusable components.',
@@ -78,7 +91,7 @@ export const WorkDetails = [
     title: 'Portfolio Dashboard',
     company: 'Personal',
     description: 'ReactJS Frontend Developer Portfolio Dashboard',
-    start: 'July 2024',
+    date: 'July 2024',
     end: 'Current',
     tasks: [
       'Fully responsive mobile-first portfolio dashboard with Light & Dark themes.',
@@ -103,7 +116,7 @@ export const WorkDetails = [
     title: 'Crypto Portfolio Mobile App',
     company: 'Vaultoro',
     description: 'Crypto & Precious Metal Exchange Portfolio App',
-    start: 'Dec 2020',
+    date: 'Dec 2020',
     end: 'Aug 2023',
     tasks: [
       'Built portfolio checking iOS app using React Native with secure OAuth sign in.',
@@ -141,7 +154,7 @@ export const WorkDetails = [
     title: 'Online Marketplace w/ Bookings & Chat',
     company: 'Perched',
     description: 'Online Marketplace for Popup Chefs & Kitchens',
-    start: 'Jan 2019',
+    date: 'Jan 2019',
     end: 'Dec 2019',
     tasks: [
       'Built ReactJS front-end following company designs.',
@@ -181,7 +194,7 @@ export const WorkDetails = [
     title: 'Brandable Captive Portal Pages',
     company: 'MIMO',
     description: 'WiFi Splash Page & Marketing Platform',
-    start: 'Jun 2017',
+    date: 'Jun 2017',
     end: 'Jul 2018',
     tasks: [
       'Created new dashboard interface following the company design loosely based on Google\'s Material Design',
@@ -217,7 +230,7 @@ export const WorkDetails = [
     title: 'Material Design Dashboard',
     company: 'Cucumber Tony [TechStars]',
     description: 'Cloud-based WiFi Management Platform',
-    start: 'Oct 2015',
+    date: 'Oct 2015',
     end: 'Nov 2019',
     tasks: [
       'Updated and managed AngularJS web app',

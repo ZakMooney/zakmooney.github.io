@@ -1,4 +1,14 @@
 export const JobDetails = [
+  // {
+  //   icon: '', // FontAwesome camelCased icon name to be displayed in the main header
+  //   title: '', // string used as main header for job item
+  //   company: '', // string used to display the company name in the main header
+  //   description: '', // string used as sub header for job item
+  //   start: '', // string used to display the job start date
+  //   end: '', // string used to display the job end date
+  //   tasks: [], // array of strings used to generate a bullet point list describing the job experience
+  //   tech: [] // array of strings used to populate the list of pills shown on the job item.
+  // },
   {
     icon: 'faCoins',
     title: 'Frontend Developer',

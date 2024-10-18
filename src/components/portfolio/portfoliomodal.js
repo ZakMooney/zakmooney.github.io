@@ -45,7 +45,7 @@ const PortfolioModal = (props) => {
     title,
     description,
     tasks,
-    start,
+    date,
     tech,
     thumbnail,
     link,
@@ -81,7 +81,7 @@ const PortfolioModal = (props) => {
         <h3 className="w-full font-medium drop-shadow-sm pb-2 flex justify-between text-lg sm:text-xl">
           {title || ''}
           <span className="text-md font-light opacity-80 text-right">
-            {start || ''}
+            {date || ''}
           </span>
         </h3>
         <h4 className="w-full text-xs sm:text-sm font-light italic drop-shadow-sm pb-2 opacity-80">

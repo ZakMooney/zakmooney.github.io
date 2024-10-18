@@ -7,7 +7,7 @@ import PortfolioModal from '../components/portfolio/portfoliomodal';
 import computer from '../assets/emoji/computer.png';
 
 
-import { WorkDetails } from '../data/portfoliodetails';
+import { PortfolioDetails } from '../data/portfoliodetails';
 
 function Portfolio() {
 
@@ -15,7 +15,7 @@ function Portfolio() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [work, setWork] = useState('');
 
-  const jobDetails = WorkDetails?.find((item) => item.tag === work);
+  const jobDetails = PortfolioDetails?.find((item) => item.tag === work);
 
   const useImages = jobDetails?.images;
   const useCaptions = jobDetails?.captions;
@@ -61,7 +61,7 @@ function Portfolio() {
     setOpen(true);
   }
 
-  const portfolioLoop = WorkDetails.map((job, index) => {
+  const portfolioLoop = PortfolioDetails.map((job, index) => {
     return (
       <Card className="mb-0 sm:mb-0" key={index}>
         <PortfolioItem
