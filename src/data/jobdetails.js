@@ -18,8 +18,9 @@ export const JobDetails = [
     end: 'Current',
     tasks: [
       'Built a fully whitelabel DApp that interacts with Ethereum contracts on the Arbitrum network',
-      'Rebuilt and streamlined entirety of old Next.js frontend into ReactJS with a focus on reusable components',
+      'Updated and expanded functionality & style of the latest version of the frontend, using a forked version of the whitelabel DApp',
       'Worked with product and back-end teams to identify product pain points and implement a simple trading feature/solution',
+      'Rebuilt and streamlined first version of the frontend into ReactJS with a focus on reusable components',
     ],
     tech: [
       'Web3',
