@@ -1,6 +1,6 @@
 # Frontend Dev Portfolio
 
-This is a personal portfolio website built with react, in the style of a dashboard, intended to showcase my personal CV and experience in a visual manner and display examples of my work through the portfolio section.
+This is my personal portfolio website built with react, in the style of a responsive 2 column dashboard, intended to showcase my personal CV and experience in a visual manner and display examples of my work through the portfolio section.
 
 ## Contents
 
