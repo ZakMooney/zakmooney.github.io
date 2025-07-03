@@ -87,45 +87,43 @@ body {
   content: "";
 }
 
-.card {
-  @include border-radius(8px);
-  &.frost {
-    box-shadow: inset 0 0 8px 0 rgba(255, 255, 255, 0.03);
-    background-color: rgba(var(--theme-card-bg), var(--theme-card-opacity));
-    backdrop-filter: blur(3px);
+.frost {
+  box-shadow: inset 0 0 8px 0 rgba(255, 255, 255, 0.03);
+  background-color: rgba(var(--theme-card-bg), var(--theme-card-opacity));
+  backdrop-filter: blur(4px);
 
-    &.modal-frost {
-      background-color: rgba(var(--theme-card-bg), 0.2);
-    }
-    
-    &::before {
-      pointer-events: none;
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 8px;
-      border: 1px solid transparent;
-      background: linear-gradient(135deg,
-      rgba(236, 239, 241, var(--theme-card-border-opacity)),
-      rgba(236, 239, 241, 0)) border-box;
-      mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-      mask-composite: exclude;
-    }
-    &::after {
-      pointer-events: none;
-      content: "";
-      z-index: 1;
-      margin-top: 0;
-      margin-bottom: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0));
-      height: 1px;
-    }
+  &.modal-frost {
+    background-color: rgba(var(--theme-card-bg), 0.2);
+  }
+  
+  &::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background: linear-gradient(135deg,
+    rgba(236, 239, 241, var(--theme-card-border-opacity)),
+    rgba(236, 239, 241, 0)) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+  }
+  &::after {
+    pointer-events: none;
+    content: "";
+    z-index: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0));
+    height: 1px;
   }
 }
+
 
 .frosted-bg {
   box-shadow: inset 0 0 8px 0 rgba(255, 255, 255, 0.03);
