@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonLink from '../components/ui/buttonlink';
+import Button from '../components/ui/button';
 
 function NotFound() {
 
@@ -9,9 +9,9 @@ function NotFound() {
         404
       </h1>
       <h2 className="neon-text text-4xl text-center mb-10">Page Not Found</h2>
-      <ButtonLink
+      <Button
         classes="button btn-pink-gradient"
-        linkText="Go Home"
+        text="Go Home"
         linkTo="/"
       />
     </div>

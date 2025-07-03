@@ -8,7 +8,7 @@ const ButtonNav = (props) => {
     <NavLink
       to={linkTo || '/'}
       className={({ isActive }) =>
-        `py-3 px-4 sm:px-6 mb-0 sm:mb-2 nav-link flex flex-col sm:flex-row items-center align-center leading-8 transition-all hover:bg-slate-500/10 hover:opacity-100 ${isActive ? ('opacity-100 bg-slate-500/5 active') : ('opacity-50')}`
+        `py-3 px-4 sm:px-6 mb-0 sm:mb-2 nav-link flex flex-col sm:flex-row items-center align-center leading-8 transition-all hover:bg-white/10 hover:opacity-100 ${isActive ? ('opacity-100 bg-white/5 active') : ('opacity-50')}`
       }
     >
       {linkIcon ? (

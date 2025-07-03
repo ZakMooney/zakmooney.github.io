@@ -28,7 +28,6 @@ export default function App() {
       <LandingLoader>
         <Routes>
           <Route path="/" element={<Layout />}>
-            {/* <Route index element={<About />} /> */}
             <Route path="/about" element={<About/>} />
             <Route path="/experience" element={<Experience/>} />
             <Route path="/portfolio" element={<Portfolio/>} />
