@@ -16,7 +16,7 @@ const SideNav = (props) => {
 
   return (
     <div className="absolute z-10 sm:relative sm:w-1/3 w-full flex-shrink flex-grow-0 sm:pr-0 nav">
-      <div className="sticky top-0 frosted-bg w-full h-full 2xl:h-auto rounded-none 2xl:rounded-lg mt-0 2xl:mt-4">
+      <div className="sticky top-0 frost w-full h-full 2xl:h-auto rounded-none 2xl:rounded-lg mt-0 2xl:mt-4">
         <div className="pb-6 pt-4 px-6 hidden sm:flex">
           <div className="profile-icon pi-sm flex flex-col justify-center">
             <img src={me} className="rounded-full drop-drop-shadow-md" alt="Zak Mooney" />

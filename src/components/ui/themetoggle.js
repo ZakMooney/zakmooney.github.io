@@ -30,7 +30,7 @@ const ThemeToggle = () => {
     <div className="w-full h-full flex flex-col justify-center items-center">
       <div className="flex justify-center items-center">
         <div
-          className="w-16 h-8 flex items-center rounded-full mx-3 px-1 frosted-bg before:rounded-full cursor-pointer"
+          className="w-16 h-8 flex items-center rounded-full px-1 frost before:rounded-full cursor-pointer"
           onClick={() => toggleTheme()}
         >
           <div
