@@ -1,14 +1,16 @@
 import React from 'react';
+
+import astronaut from '../assets/emoji/astronaut.png';
+import { JobDetails } from '../data/jobdetails';
+
 import Card from '../components/ui/card';
 import ExperienceItem from '../components/experience/experienceitem';
-import { JobDetails } from '../data/jobdetails';
-import ButtonLink from '../components/ui/buttonlink';
-import astronaut from '../assets/emoji/astronaut.png';
+import Button from '../components/ui/button';
 
 function About() {
   return (
     <>
-      <h1 className="text-3xl font-medium drop-shadow-sm mb-2">
+      <h1 className="text-3xl font-medium drop-shadow-sm mb-4">
         About Me <img src={astronaut} alt={'About Me'} className="mb-2 h-[30px] w-[30px] inline-block"></img>
       </h1>
       <Card className="about">
@@ -26,21 +28,21 @@ function About() {
           </p>
         </div>
       </Card>
-      <h1 className="text-3xl font-medium drop-shadow-sm mb-4">
+      <h1 className="text-3xl font-medium drop-shadow-sm mb-4 mt-8">
         Latest Experience
       </h1>
       <Card className="mb-4">
         <ExperienceItem jobDetails={JobDetails[0]} />
         <div className="w-full flex justify-end mt-4">
-          <ButtonLink
-            classes="button btn-purple-gradient"
-            linkText="See More"
+          <Button
+            text="See More"
             linkTo="/experience"
+            type="purple"
           />
         </div>
       </Card>
 
-      <h1 className="text-3xl font-medium drop-shadow-sm mb-4">
+      <h1 className="text-3xl font-medium drop-shadow-sm mb-4 mt-8">
         Core Skills
       </h1>
       <Card className="about">
@@ -70,10 +72,10 @@ function About() {
           </div>
         </div>
         <div className="w-full flex justify-end">
-          <ButtonLink
-            classes="button btn-purple-gradient"
-            linkText="See More"
+          <Button
+            text="See More"
             linkTo="/experience"
+            type="purple"
           />
         </div>
       </Card>

@@ -1,22 +1,29 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 const Button = (props) => {
-  const {onClick, icon, text, type, large} = props;
+  const navigate = useNavigate();
+  const {
+    onClick,
+    icon,
+    text,
+    type,
+    large,
+    linkTo,
+    className
+  } = props;
 
   let useClasses;
 
   switch (type) {
-    case 'ghost':
-      useClasses = 'flex items-center justify-center button btn-ghost'
+    case 'outline-icon':
+      useClasses = 'backdrop-blur-md bg-transparent hover:bg-white/10 border border-white/30 hover:border-white/50 text-gray-300 hover:text-white p-2 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-white/10 h-[42px] w-[42px]'
       break;
     case 'purple':
-      useClasses = 'flex items-center justify-center button btn-purple-gradient'
-      break;
-    case 'pink':
-      useClasses = 'flex items-center justify-center button btn-pink-gradient'
+      useClasses = 'backdrop-blur-md bg-gradient-to-r from-blue-500/20 to-purple-500/20 hover:from-blue-500/30 hover:to-purple-500/30 border border-purple-500/50 hover:border-purple-400/70 text-white py-3 px-6 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-purple-500/25 hover:-translate-y-[2px]'
       break;
     default:
-      useClasses = 'flex items-center justify-center button'
+        useClasses = 'backdrop-blur-md bg-transparent hover:bg-white/10 border border-white/30 hover:border-white/50 text-gray-300 hover:text-white py-2 px-4 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-white/10'
       break;
   }
 
@@ -24,9 +31,15 @@ const Button = (props) => {
     useClasses = useClasses + ' btn-large';
   }
 
+  useClasses = useClasses + ' ' + className;
+
   return (
     <button
-      onClick={onClick ? (onClick) : (null)}
+      onClick={onClick ? (onClick) : (
+        linkTo ? (
+          () => navigate(linkTo)
+        ) : ((null))
+      )}
       className={useClasses}
     >
       {icon ? (

@@ -5,6 +5,7 @@ import me from "../../assets/images/me.jpg";
 
 import ThemeToggle from "./themetoggle";
 import ButtonNavMob from './buttonnavmob';
+import Button from './button';
 
 const TopNav = ({links}) => {
   const [navOpen, setNavOpen] = useState(false);
@@ -14,24 +15,26 @@ const TopNav = ({links}) => {
       <nav className="flex justify-center frost frost-squared sticky top-0 z-50 px-4 sm:px-6 py-4 shadow-lg">
         <div className="flex items-center justify-between w-full max-w-[1440px]">
           <div className="flex items-center w-full md:w-auto">
-            <button
-              className="md:hidden backdrop-blur-md bg-white/10 border border-white/20 hover:bg-white/20 rounded-[12px] p-2 transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/25"
+            <Button
               onClick={() => setNavOpen(!navOpen)}
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </button>
+              icon={
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              }
+              type="outline-icon"
+              className="md:hidden"
+            />
 
             <div className="flex w-full justify-center md:w-auto md:justify-start">
               <div className="profile-icon pi-xs flex flex-col justify-center">
@@ -85,6 +88,7 @@ const TopNav = ({links}) => {
                 linkIcon={<img src={item.icon} alt={'About'} className="h-auto w-auto object-contain"></img>}
                 linkText={item.name}
                 linkTo={item.link}
+                key={index}
               />
             );
           })}

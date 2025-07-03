@@ -8,8 +8,8 @@ import ButtonNav from './buttonnav';
 const SideNav = ({ links }) => {
 
   return (
-    <div className="hidden md:flex absolute z-10 sm:relative sm:w-1/3 w-full flex-shrink flex-grow-0 sm:pr-0 max-w-[250px] -mt-[2px]">
-      <div className="sticky top-0 frost frost-squared rounded-none 2xl:rounded-[12px] w-full h-full 2xl:h-auto  mt-0 2xl:mt-4 pt-4">
+    <div className="hidden md:flex absolute z-10 sm:relative sm:w-1/3 w-full flex-shrink flex-grow-0 sm:pr-0 max-w-[200px] -mt-[2px]">
+      <div className="sticky top-0 frost frost-squared rounded-none 2xl:rounded-[12px] w-full h-full 2xl:h-fit mt-0 2xl:mt-4 pt-4">
         <div className="flex sm:flex-col overflow-hidden content-center justify-between">
           {links.map((item, index) => {
             return (
@@ -17,6 +17,7 @@ const SideNav = ({ links }) => {
                 linkIcon={<img src={item.icon} alt={'About'} className="h-auto w-auto object-contain"></img>}
                 linkText={item.name}
                 linkTo={item.link}
+                key={index}
               />
             );
           })}
