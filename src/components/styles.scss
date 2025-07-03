@@ -1,3 +1,7 @@
+:root {
+  --my-border-radius: 12px;
+}
+
 @mixin border-radius($radius) {
   border-radius: $radius;
   -webkit-border-radius: $radius;
@@ -69,20 +73,6 @@ body {
   margin: auto;
 }
 
-.nav {
-  max-width: 250px;
-}
-
-@media (max-width: 639px) {
-  .nav {
-    max-width: unset;
-    .profile-icon,
-    .profile-icon.pi-sm {
-      display: none;
-    }
-  }
-}
-
 .apy-card table tr::before {
   content: "";
 }
@@ -102,7 +92,6 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 8px;
     border: 1px solid transparent;
     background: linear-gradient(135deg,
     rgba(236, 239, 241, var(--theme-card-border-opacity)),
@@ -122,6 +111,16 @@ body {
     right: 0;
     background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0));
     height: 1px;
+  }
+}
+
+.card.frost {
+  border-radius: var(--my-border-radius);  
+  &::before {
+    border-radius: var(--my-border-radius);
+  }
+  &::after {
+    border-radius: var(--my-border-radius);
   }
 }
 
@@ -218,7 +217,6 @@ body {
   position: relative;
   box-shadow: rgba(var(--theme-blue-gradient-start), 0.2) 0px 4px 10px 0px;
 
-
   &:before {
     content: '';
     transition: all 0.2s ease 0s;
@@ -297,7 +295,8 @@ body {
   }
 }
 
-.nav-link.active {
+.nav-link.active,
+.nav-link-mob.active {
   position: relative;
   &:before, :after {
     content: '';
@@ -309,30 +308,23 @@ body {
     background-color: rgba(var(--theme-blue-gradient-start), 1);
     background: rgba(var(--theme-blue-gradient-start), 1);
     background: linear-gradient(140deg, rgba(var(--theme-purple-gradient-start), 1) 0%, rgba(var(--theme-purple-gradient-end), 1) 75%);  
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-top-right-radius: var(--my-border-radius);
+    border-bottom-right-radius: var(--my-border-radius);
   }
   &:before {
     filter: blur(3px);
   }
 }
-@media (max-width: 639px) {
-  .nav-link.active {
-    &:before, :after {
-      content: '';
-      left: 0px;
-      top: unset;
-      bottom: 0px;
-      right: 0px;
-      width: unset;
-      height: 4px;
-      border-top-right-radius: 8px;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 8px;
-    }
+
+.nav-link-mob.active {
+  position: relative;
+  &:before, :after {
+    border-top-left-radius: var(--my-border-radius);
+    border-bottom-left-radius: var(--my-border-radius);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 }
-
 
 h1.neon-text {
   animation: flicker 1.5s infinite alternate;     

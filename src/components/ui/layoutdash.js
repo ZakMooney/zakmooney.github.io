@@ -8,7 +8,7 @@ import computer from "../../assets/emoji/computer.png";
 import envelope from "../../assets/emoji/envelope.png";
 
 import SideNav from './sidenav';
-import TopBar from './topbar';
+import TopNav from './topnav';
 
 const LayoutDash = (props) => {
   const location = useLocation();
@@ -39,16 +39,16 @@ const LayoutDash = (props) => {
 
   return (
     <>
-      <TopBar links={links} />
+      <TopNav links={links} />
       <div className="content w-full h-full flex flex-col-reverse sm:flex-row flex-grow overflow-hidden">
-          {/* <SideNav /> */}
+        <SideNav links={links} />
         <main role="main" className="w-full h-full flex-grow">
           <motion.div
             key={pathname}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: "easeOut", duration: 0.5 }}
-            className="w-full h-full flex-grow p-4 mb-0 pb-20 sm:pb-4 overflow-auto pt-[94px] sm:pt-4"
+            className="w-full h-full flex-grow p-4 mb-0 pb-[240px] overflow-auto"
           >
             {props.children}
           </motion.div>
