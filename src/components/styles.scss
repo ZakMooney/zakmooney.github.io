@@ -57,19 +57,16 @@ body {
 }
 
 #root {
-  height: var(--max-height);
-  width: 100vw;
-  min-height: var(--max-height);
-  min-height: -webkit-fill-available;
-  min-width: 100vw;
-  min-width: -webkit-fill-available;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.content {
-  max-width: var(--tw-screen-2xl);
-  max-height: var(--max-height);
-  margin: auto;
-}
+// .content {
+//   max-width: var(--tw-screen-2xl);
+//   max-height: var(--max-height);
+//   margin: auto;
+// }
 
 h1, h2, h3, h4, p {
   transition: color 0.2s ease 0s;

@@ -8,8 +8,9 @@ import ButtonNav from './buttonnav';
 const SideNav = ({ links }) => {
 
   return (
-    <div className="hidden md:flex absolute z-10 sm:relative sm:w-1/3 w-full flex-shrink flex-grow-0 sm:pr-0 max-w-[200px] -mt-[2px]">
-      <div className="sticky top-0 frost frost-squared rounded-none 2xl:rounded-[12px] w-full h-full 2xl:h-fit mt-0 2xl:mt-8 pt-4">
+    <div className="hidden md:flex sticky top-[calc(1rem+76px)] z-10 h-full sm:w-1/3 w-full flex-shrink flex-grow-0 sm:pr-0 max-w-[200px] -mt-[2px]">
+      {/* <div className="sticky top-2 frost frost-squared rounded-none 2xl:rounded-[12px] w-full h-full 2xl:h-fit mt-0 2xl:mt-8 pt-4"> */}
+      <div className="frost frost-squared rounded-r-[12px] 2xl:rounded-l-[12px] w-full h-full 2xl:h-fit mt-0 pt-4">
         <div className="flex sm:flex-col overflow-hidden content-center justify-between">
           {links.map((item, index) => {
             return (
