@@ -51,7 +51,7 @@ function About() {
             <div className="w-full">
               <ul className="list-disc pl-4">
                 <li>HTML, Javascript, CSS3, SCSS</li>
-                <li>ReactJS</li>
+                <li>React</li>
                 <li>Foundation, Material UI, Tailwind, Bootstrap</li>
               </ul>
             </div>

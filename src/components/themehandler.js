@@ -18,7 +18,8 @@ const ThemeHandler = (props) => {
 
   useEffect(() => {
     localStorage.setItem("theme", storedTheme);
-    document.getElementById("body").className = 'zm-' + storedTheme;
+    document.getElementById("body").className = storedTheme;
+    document.documentElement.setAttribute('data-theme', storedTheme);
   }, [storedTheme]);
 
   return (

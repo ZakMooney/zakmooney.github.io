@@ -1,5 +1,4 @@
 import React from 'react';
-import Pill from '../ui/pill';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBuilding,
@@ -9,6 +8,9 @@ import {
   faStore,
   faWifi
 } from '@fortawesome/free-solid-svg-icons';
+
+import { TechColours } from '../../data/techcolours';
+import Pill from '../ui/pill';
 
 const ExperienceItem = (props) => {
   const {jobDetails} = props;
@@ -24,8 +26,13 @@ const ExperienceItem = (props) => {
   });
 
   const techLoop = tech.map((tech, index) => {
+    let useColours = '';
+    const techColour = TechColours?.find((item) => item.tech === tech);
+    if (techColour) {
+      useColours = techColour.classes;
+    }
     return (
-      <Pill key={index} text={tech} />
+      <Pill key={index} text={tech} colours={useColours} />
     )
   });
 
