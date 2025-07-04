@@ -8,26 +8,6 @@ import Button from './button';
 
 const TopNav = ({links}) => {
   const [navOpen, setNavOpen] = useState(false);
-  const elementRef = useRef(null);
-
-  useEffect(() => {
-    function handleClickOutside(event) {
-      console.log('CLICK')
-      if (elementRef.current && !elementRef.current.contains(event.target)) {
-        console.log('OUT')
-        if (navOpen) {
-          console.log('CLOSE')
-          setNavOpen(false);
-        }
-      }  
-    }
-    document.addEventListener('mousedown', handleClickOutside);
-    document.addEventListener('touchstart', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      document.addEventListener('touchstart', handleClickOutside);
-    };
-  }, []);
 
   return (
     <>
@@ -94,11 +74,10 @@ const TopNav = ({links}) => {
       </nav>
 
       <div
-        ref={elementRef}
         className={
           navOpen
-            ? "md:hidden frost fixed top-16 left-0 right-0 z-40 p-4 opacity-1 transition-all duration-300 ease-in-out"
-            : "md:hidden frost fixed top-16 left-0 right-0 z-40 p-4 transform -translate-y-full opacity-0 transition-all duration-300 ease-in-out"
+            ? "md:hidden frost fixed top-16 left-0 right-0 z-40 p-4 opacity-1 transition-all duration-200 ease-in-out"
+            : "md:hidden frost fixed top-16 left-0 right-0 z-40 p-4 transform -translate-y-full opacity-0 transition-all duration-200 ease-in-out"
         }
       >
         <div className="space-y-4 mt-4">
@@ -114,6 +93,14 @@ const TopNav = ({links}) => {
           })}
         </div>
       </div>
+      <div
+          onClick={() => setNavOpen(false)}
+          className={
+            navOpen
+              ? "z-1 fixed inset-0 bg-slate-500/40 dark:bg-slate-900/40 transition-all duration-200 ease-in-out backdrop-blur-xs"
+              : "z-1 hidden bg-slate-500/10 dark:bg-slate-900/10 transition-all duration-200 ease-in-out backdrop-blur-none"
+          }  
+        />
     </>
   );
 
