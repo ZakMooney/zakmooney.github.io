@@ -39,7 +39,7 @@ const LayoutDash = (props) => {
 
   return (
     <>
-      <aside className="w-full max-w-[96rem] my-0 mx-auto">
+      <div className="w-full max-w-[96rem] my-0 mx-auto">
         <TopNav links={links} />
         <div className="flex flex-col md:flex-row">
           <SideNav links={links} />
@@ -57,7 +57,7 @@ const LayoutDash = (props) => {
             </motion.div>
           </main>
         </div>
-      </aside>
+      </div>
 
     </>
   );

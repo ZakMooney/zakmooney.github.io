@@ -1,7 +1,8 @@
-import React from "react";
+import { useEffect } from "react";
 import {
   Routes,
   Route,
+  useLocation,
 } from "react-router-dom";
 
 import Layout from "./components/ui/layout";
@@ -23,6 +24,15 @@ if (isPC) {
 }
 
 export default function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const rootElement = document.getElementById('root');
+    if (rootElement) {
+      rootElement.scrollTop = 0;
+    }
+  }, [pathname]);
+
   return (
     <ThemeHandler>
       <LandingLoader>
