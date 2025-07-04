@@ -45,7 +45,7 @@ function About() {
       <h1 className="text-3xl font-medium drop-shadow-sm mb-4 mt-8">
         Core Skills
       </h1>
-      <Card className="about">
+      <Card className="mb-4">
         <div className="w-full">
           <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-4 opacity-80">
             <div className="w-full">

@@ -176,28 +176,6 @@ body {
   }
 }
 
-.about {
-  .profile-icon {
-    & > img {
-      height: auto;
-      width: 100%;
-      pointer-events: none;
-      @include border-radius(8px);
-    }
-    &::before {
-      content: '';
-      z-index: -1;
-      position: absolute;
-      // top: -4px;
-      height: calc(100% + 8px);
-      width: calc(100% + 8px);
-      @include border-radius(10px);
-      background: linear-gradient(140deg, rgb(var(--theme-blue-gradient-start)) 0%, rgb(var(--theme-blue-gradient-end)) 100%);
-      box-shadow: rgba(var(--theme-blue-gradient-start), 0.2) 0px 4px 10px 0px;
-    }  
-  }
-}
-
 .welcome {
   &.card {
     h1 {
