@@ -29,11 +29,8 @@ export const JobDetails = [
       'React',
       'Wagmi',
       'Zustand',
-      'TypeScript',
       'MUI',
       'Tailwind',
-      'HTML',
-      'SCSS'
     ]
   },
   {
@@ -57,7 +54,6 @@ export const JobDetails = [
       'React Native',
       'Expo',
       'RESTful API',
-      'HTML',
       'SCSS'
     ]
   },

@@ -69,7 +69,6 @@ export const PortfolioDetails = [
       'Tailwind',
       'DaisyUI',
       'HTML',
-      'SCSS'
     ],
     thumbnail: web3Vault,
     images: [

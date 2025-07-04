@@ -31,48 +31,48 @@ const ExperienceItem = (props) => {
   });
 
   const showIcon = (icon) => {
-    const iconClass = 'mx-2 opacity-60 t-accent';
+    const iconClass = 'mx-2 opacity-60';
     switch (icon) {
       case 'faCoins':
         return (
           <FontAwesomeIcon
             icon={faCoins}
-            className={iconClass}
+            className={iconClass + ' text-indigo-400 dark:text-indigo-500 stroke-indigo-600 dark:stroke-indigo-700 stroke-[20px]'}
           />
         )
       case 'faVault':
         return (
           <FontAwesomeIcon
             icon={faVault}
-            className={iconClass}
+            className={iconClass + ' text-amber-400 dark:text-amber-500 stroke-amber-600 dark:stroke-amber-700 stroke-[20px]'}
           />
         )
       case 'faUtensils':
         return (
           <FontAwesomeIcon
             icon={faUtensils}
-            className={iconClass}
+            className={iconClass + ' text-rose-400 dark:text-rose-500 stroke-rose-600 dark:stroke-rose-700 stroke-[20px]'}
           />
         )
       case 'faStore':
         return (
           <FontAwesomeIcon
             icon={faStore}
-            className={iconClass}
+            className={iconClass + ' text-sky-400 dark:text-sky-500 stroke-sky-600 dark:stroke-sky-700 stroke-[20px]'}
           />
         )
       case 'faWifi':
         return (
           <FontAwesomeIcon
             icon={faWifi}
-            className={iconClass}
+            className={iconClass + ' text-emerald-400 dark:text-emerald-500 stroke-emerald-600 dark:stroke-emerald-700 stroke-[20px]'}
           />
         )
       default:
         return (
           <FontAwesomeIcon
             icon={faBuilding}
-            className="mx-2 opacity-80 t-accent"
+            className={iconClass + ' text-slate-400 dark:text-slate-500 stroke-slate-600 dark:stroke-slate-700 stroke-[20px]'}
           />
         )
       }  
