@@ -68,7 +68,6 @@ export const PortfolioDetails = [
       'Zustand',
       'Tailwind',
       'DaisyUI',
-      'HTML',
     ],
     thumbnail: web3Vault,
     images: [
@@ -102,7 +101,6 @@ export const PortfolioDetails = [
     tech: [
       'React',
       'Tailwind',
-      'HTML',
       'SCSS'
     ],
     thumbnail: portThumbnail,
