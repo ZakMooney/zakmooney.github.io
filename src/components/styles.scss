@@ -27,6 +27,7 @@ body {
     rgba(78, 109, 244, 0.3) 0%,
     rgba(78, 109%, 244, 0) 100%),
     radial-gradient(ellipse at bottom, rgb(var(--theme-background-dark)) 0%, rgb(var(--theme-background-light)) 100%);
+  transition: background 0.2s ease 0s;
   margin: 0;
   position: relative;
   min-height: var(--max-height);
@@ -61,12 +62,6 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
 }
-
-// .content {
-//   max-width: var(--tw-screen-2xl);
-//   max-height: var(--max-height);
-//   margin: auto;
-// }
 
 h1, h2, h3, h4, p {
   transition: color 0.2s ease 0s;
