@@ -19,8 +19,10 @@ const TopNav = ({links}) => {
       }  
     }
     document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      document.addEventListener('touchstart', handleClickOutside);
     };
   }, []);
 
