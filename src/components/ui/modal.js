@@ -43,7 +43,7 @@ const Modal = (props) => {
           </div>
           <div
             onClick={closeModal}
-            className="z-30 fixed inset-0 bg-slate-900/80 backdrop-blur-md"
+            className="z-30 fixed inset-0 bg-slate-500/60 dark:bg-slate-900/80 backdrop-blur-md"
           />
         </div>
       ) : (null)}

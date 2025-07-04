@@ -9,8 +9,9 @@ import {
   faWifi
 } from '@fortawesome/free-solid-svg-icons';
 
-import { TechColours } from '../../data/techcolours';
 import Pill from '../ui/pill';
+
+import { TechColours } from '../../data/techcolours';
 
 const ExperienceItem = (props) => {
   const {jobDetails} = props;

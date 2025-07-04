@@ -71,6 +71,10 @@ body {
   margin: auto;
 }
 
+h1, h2, h3, h4, p {
+  transition: color 0.2s ease 0s;
+}
+
 .apy-card table tr::before {
   content: "";
 }
@@ -273,28 +277,6 @@ h1.neon-text {
     align-items: center;
     justify-content: center;
     pointer-events: none;
-  }
-}
-
-.pill {
-  position: relative;
-  overflow: hidden;
-  @include border-radius(9001px);
-  box-shadow: rgba(var(--theme-pill-colour), 0) 0px 4px 10px 0px;
-  color: rgba(var(--theme-pill-colour), 1);
-  // height: 28px;
-  max-height: 28px;
-  &:before {
-    content: '';
-    transition: all 0.2s ease 0s;
-    z-index: -1;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    opacity: 1;
-    background-color: rgba(var(--theme-pill-colour), 0.3);
   }
 }
 
