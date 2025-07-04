@@ -90,7 +90,7 @@ const BarChart = () => {
   };
 
   const labels = [
-    'ReactJS',
+    'React',
     'Javascript',
     'HTML',
     'SCSS',

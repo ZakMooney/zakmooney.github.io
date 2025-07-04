@@ -12,8 +12,8 @@ const TopNav = ({links}) => {
 
   return (
     <>
-      <nav className="flex justify-center frost frost-squared sticky top-0 z-50 px-4 sm:px-6 py-4 shadow-lg">
-        <div className="flex items-center justify-between w-full max-w-[1440px]">
+      <nav className="flex justify-center frost frost-squared sticky top-0 z-50 px-4 sm:px-6 py-4 shadow-lg max-w-[96rem] m-auto 2xl:rounded-b-[12px]">
+        <div className="flex items-center justify-between w-full">
           <div className="flex items-center w-full md:w-auto">
             <Button
               onClick={() => setNavOpen(!navOpen)}

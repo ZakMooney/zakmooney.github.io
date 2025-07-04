@@ -48,9 +48,10 @@ const LayoutDash = (props) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: "easeOut", duration: 0.5 }}
-            className="w-full h-full flex-grow p-4 md:p-8 mb-0 pb-[240px] overflow-auto"
+            className="w-full h-full flex-grow p-4 md:p-8 mb-0 overflow-auto 2xl:pr-0"
           >
             {props.children}
+            <div className="block pb-[80px]"/>
           </motion.div>
         </main>
       </div>

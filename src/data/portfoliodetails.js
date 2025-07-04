@@ -64,12 +64,10 @@ export const PortfolioDetails = [
     ],
     tech: [
       'Web3',
-      'ReactJS',
+      'React',
       'Zustand',
       'Tailwind',
       'DaisyUI',
-      'HTML',
-      'SCSS'
     ],
     thumbnail: web3Vault,
     images: [
@@ -90,7 +88,7 @@ export const PortfolioDetails = [
     tag: 'PORTFOLIO',
     title: 'Portfolio Dashboard',
     company: 'Personal',
-    description: 'ReactJS Frontend Developer Portfolio Dashboard',
+    description: 'React Frontend Developer Portfolio Dashboard',
     date: 'July 2024',
     end: 'Current',
     tasks: [
@@ -98,12 +96,11 @@ export const PortfolioDetails = [
       'Focus on components & data driven implementation.',
     ],
     mainTech: [
-      'ReactJS',
+      'React',
     ],
     tech: [
-      'ReactJS',
+      'React',
       'Tailwind',
-      'HTML',
       'SCSS'
     ],
     thumbnail: portThumbnail,
@@ -157,14 +154,14 @@ export const PortfolioDetails = [
     date: 'Jan 2019',
     end: 'Dec 2019',
     tasks: [
-      'Built ReactJS front-end following company designs.',
+      'Built React front-end following company designs.',
       'Implemented key feature interfaces, including live messaging and a two way booking system.',
     ],
     mainTech: [
-      'ReactJS',
+      'React',
     ],
     tech: [
-      'ReactJS',
+      'React',
       'Redux',
       'RESTful API',
       'HTML',
