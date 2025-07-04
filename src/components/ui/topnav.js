@@ -1,5 +1,4 @@
-import { Fragment, useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 
 import me from "../../assets/images/me.jpg";
 

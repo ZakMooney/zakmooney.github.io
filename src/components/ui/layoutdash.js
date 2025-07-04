@@ -39,17 +39,10 @@ const LayoutDash = (props) => {
 
   return (
     <>
-      {/* <div className="content w-full h-full flex flex-col-reverse sm:flex-row flex-grow overflow-hidden"> */}
       <aside className="w-full max-w-[96rem] my-0 mx-auto">
         <TopNav links={links} />
-        
-        {/* ==== dash con */}
         <div className="flex flex-col md:flex-row">
           <SideNav links={links} />
-          {/* <main role="main" className="w-full h-full flex-grow"> */}
-
-
-          {/* ==== main con */}
           <main role="main" className="flex-1 p-4 2xl:pr-0">
             <motion.div
               key={pathname}
