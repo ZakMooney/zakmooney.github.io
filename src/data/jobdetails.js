@@ -116,16 +116,16 @@ export const JobDetails = [
 ];
 
 export const SkillYears = [
-  5, // React         2019
-  8, // Javascript    2016
-  9, // HTML          2015
-  9, // SCSS          2015
-  1, // Web3          2023
+  6, // React         2019
+  9, // Javascript    2016
+  10,// HTML          2015
+  10,// SCSS          2015
+  2, // Web3          2023
   1, // React Native  2022-2023
 ];
 
 export const RoleYears = [
-  1, // Web3          2023
-  8, // Frontend      2016
+  2, // Web3          2023
+  9, // Frontend      2016
   1, // App           2022-2023
 ];
