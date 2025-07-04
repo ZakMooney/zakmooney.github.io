@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useState } from "react";
 
 import me from "../../assets/images/me.jpg";
 
