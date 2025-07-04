@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useEffect, useState } from "react";
 
 import me from "../../assets/images/me.jpg";
 
@@ -8,6 +8,21 @@ import Button from './button';
 
 const TopNav = ({links}) => {
   const [navOpen, setNavOpen] = useState(false);
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (elementRef.current && !elementRef.current.contains(event.target)) {
+        if (navOpen) {
+          setNavOpen(false);
+        }
+      }  
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -74,6 +89,7 @@ const TopNav = ({links}) => {
       </nav>
 
       <div
+        ref={elementRef}
         className={
           navOpen
             ? "md:hidden frost fixed top-16 left-0 right-0 z-40 p-4 opacity-1 transition-all duration-300 ease-in-out"
