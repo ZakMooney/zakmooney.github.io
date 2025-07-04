@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f2d9e00b.css",
-    "main.js": "/static/js/main.b0bdf9a1.js",
+    "main.css": "/static/css/main.bc0d19f0.css",
+    "main.js": "/static/js/main.455ac8cb.js",
     "static/css/195.4dae28ad.chunk.css": "/static/css/195.4dae28ad.chunk.css",
     "static/js/195.5a1a5868.chunk.js": "/static/js/195.5a1a5868.chunk.js",
     "static/media/VAULT-App_Showcase.mp4": "/static/media/VAULT-App_Showcase.d252cf3826dd08613af8.mp4",
@@ -36,13 +36,13 @@
     "static/media/astronaut.png": "/static/media/astronaut.18df5468d393609a45c5.png",
     "static/media/man.png": "/static/media/man.9027986bf27eaa4f2fa5.png",
     "index.html": "/index.html",
-    "main.f2d9e00b.css.map": "/static/css/main.f2d9e00b.css.map",
-    "main.b0bdf9a1.js.map": "/static/js/main.b0bdf9a1.js.map",
+    "main.bc0d19f0.css.map": "/static/css/main.bc0d19f0.css.map",
+    "main.455ac8cb.js.map": "/static/js/main.455ac8cb.js.map",
     "195.4dae28ad.chunk.css.map": "/static/css/195.4dae28ad.chunk.css.map",
     "195.5a1a5868.chunk.js.map": "/static/js/195.5a1a5868.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2d9e00b.css",
-    "static/js/main.b0bdf9a1.js"
+    "static/css/main.bc0d19f0.css",
+    "static/js/main.455ac8cb.js"
   ]
 }
