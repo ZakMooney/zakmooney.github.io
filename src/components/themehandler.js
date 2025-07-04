@@ -14,7 +14,7 @@ const ThemeHandler = (props) => {
     } else if (chosenTheme !== storedTheme) {
       setStoredTheme(chosenTheme)
     }
-  });
+  }, []);
 
   useEffect(() => {
     localStorage.setItem("theme", storedTheme);
