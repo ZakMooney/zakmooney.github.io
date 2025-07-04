@@ -21,7 +21,7 @@ function About() {
             Hey there! I&apos;m Zak, a tech lover with a passion for crafting user-friendly interfaces.
           </p>
           <p className="text-lg font-light opacity-80 drop-shadow-sm pb-4">
-            From my younger years of toying with HTML & CSS as a hobby, I&apos;ve since expanded into over 9 years of professional expertise building & maintaining frontends for everything from SaaS products & technical dashboards, to marketplaces & crypto dashboards.
+            From my younger years of toying with HTML & CSS as a hobby, I&apos;ve since expanded into over 8 years of professional expertise building & maintaining frontends for everything from SaaS products, to marketplaces & crypto dashboards.
           </p>
           <p className="text-lg font-light opacity-80 drop-shadow-sm">
             My years of experience working in tech startups have helped me forge a skillset that allows me to handle the unique challenges and opportunities that arise in fast-paced & innovative settings.
@@ -45,13 +45,13 @@ function About() {
       <h1 className="text-3xl font-medium drop-shadow-sm mb-4 mt-8">
         Core Skills
       </h1>
-      <Card className="mb-4">
+      <Card className="about">
         <div className="w-full">
           <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-4 opacity-80">
             <div className="w-full">
               <ul className="list-disc pl-4">
                 <li>HTML, Javascript, CSS3, SCSS</li>
-                <li>React</li>
+                <li>ReactJS</li>
                 <li>Foundation, Material UI, Tailwind, Bootstrap</li>
               </ul>
             </div>
