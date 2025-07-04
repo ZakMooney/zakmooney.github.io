@@ -12,8 +12,11 @@ const TopNav = ({links}) => {
 
   useEffect(() => {
     function handleClickOutside(event) {
+      console.log('CLICK')
       if (elementRef.current && !elementRef.current.contains(event.target)) {
+        console.log('OUT')
         if (navOpen) {
+          console.log('CLOSE')
           setNavOpen(false);
         }
       }  
