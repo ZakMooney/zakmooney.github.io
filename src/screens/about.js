@@ -33,7 +33,7 @@ function About() {
       </h1>
       <Card className="mb-4">
         <ExperienceItem jobDetails={JobDetails[0]} />
-        <div className="w-full flex justify-end mt-4">
+        <div className="w-full flex justify-start mt-4">
           <Button
             text="See More"
             linkTo="/experience"
@@ -71,7 +71,7 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="w-full flex justify-end">
+        <div className="w-full flex justify-start mt-4">
           <Button
             text="See More"
             linkTo="/experience"
