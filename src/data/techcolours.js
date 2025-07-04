@@ -1,11 +1,11 @@
 export const TechColours = [
   {
     tech: 'Web3',
-    classes: 'bg-orange-500/40 dark:bg-orange-500/20 border-orange-500/50 text-orange-200',
+    classes: 'bg-fuchsia-500/40 dark:bg-fuchsia-500/20 border-fuchsia-500/50 text-fuchsia-200',
   },
   {
     tech: 'Ethereum',
-    classes: 'bg-indigo-500/40 dark:bg-indigo-500/20 border-indigo-500/50 text-indigo-200',
+    classes: 'bg-indigo-500/40 dark:bg-indigo-500/20 border-indigo-500/50 text-indigo-100',
   },
   {
     tech: 'DApp',
@@ -29,7 +29,7 @@ export const TechColours = [
   },
   {
     tech: 'MUI',
-    classes: 'bg-blue-700/40 dark:bg-blue-700/20 border-blue-700/50 text-blue-300',
+    classes: 'bg-blue-700/40 dark:bg-blue-700/20 border-blue-700/50 text-blue-200',
   },
   {
     tech: 'Tailwind',
@@ -37,7 +37,7 @@ export const TechColours = [
   },
   {
     tech: 'HTML',
-    classes: 'bg-orange-600/40 dark:bg-orange-600/20 border-orange-600/50 text-orange-200',
+    classes: 'bg-orange-600/40 dark:bg-orange-600/20 border-orange-600/50 text-orange-100',
   },
   {
     tech: 'SCSS',
@@ -62,5 +62,9 @@ export const TechColours = [
   {
     tech: 'AngularJS',
     classes: 'bg-red-500/40 dark:bg-red-500/20 border-red-500/50 text-red-200',
+  },
+  {
+    tech: 'DaisyUI',
+    classes: 'bg-amber-500/40 dark:bg-amber-500/20 border-amber-500/50 text-amber-200',
   },
 ];

@@ -2,8 +2,6 @@ import React from 'react';
 import Pill from '../ui/pill';
 import Button from '../ui/button';
 
-import { TechColours } from '../../data/techcolours';
-
 const PortfolioItem = (props) => {
   const {
     jobDetails,
@@ -13,13 +11,8 @@ const PortfolioItem = (props) => {
   const {title, description, mainTech, tag, thumbnail} = jobDetails;
 
   const techLoop = mainTech.map((tech, index) => {
-    let useColours = '';
-    const techColour = TechColours?.find((item) => item.tech === tech);
-    if (techColour) {
-      useColours = techColour.classes;
-    }
     return (
-      <Pill key={index} text={tech} colours={useColours} />
+      <Pill key={index} text={tech} />
     )
   });
 
