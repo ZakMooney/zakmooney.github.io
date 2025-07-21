@@ -46,6 +46,43 @@ export const PortfolioDetails = [
   //   captions: [], // array of strings to be used as captions for the lightbox/gallery images. They are matched by index, so order matters.
   //   link: '', // optional string that is used for a github button.
   // },
+    {
+    tag: 'GAME_SHARE',
+    title: 'Game Cabinet',
+    company: 'Hobby',
+    description: 'Create & Share Custom Game Collection Lists',
+    date: 'Jul 2025',
+    end: 'Current',
+    tasks: [
+      'Focus on simple, customisable, and reusable components.',
+      'Interacts with ethereum contracts on the blockchain.',
+      'Easily brandable .env variables.',
+      'Styled with TailwindCSS & DaisyUI allowing quick and easy theme customisation.',
+    ],
+    mainTech: [
+      'React',
+    ],
+    tech: [
+      'React',
+      'Zustand',
+      'Tailwind',
+      'API',
+    ],
+    thumbnail: web3Vault,
+    images: [
+      web3Showcase,
+      web3VaultList,
+      web3VaultMobile,
+      web3Customised,
+    ],
+    captions: [
+      'Showcase of the decentralised frontend, explaining it\'s purpose & functionality, showing some of the user interactions, and demonstrating how it can be further easily customised.',
+      'Paginated list of vaults & basic dashboard layout.',
+      'Responsive mobile dashboard layout, and light mode demonstration.',
+      'Example of customised frontend forked from decentralised frontend with additional styles and functionality.',
+    ],
+    link: 'https://github.com/ZakMooney/defi-tst-dapp',
+  },
   {
     tag: 'WEB3_DAPP',
     title: 'Whitelabel Web3 Dashboard',
