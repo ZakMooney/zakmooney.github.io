@@ -67,4 +67,8 @@ export const TechColours = [
     tech: 'DaisyUI',
     classes: 'bg-amber-500/40 dark:bg-amber-500/20 border-amber-500/50 text-amber-200',
   },
+  {
+    tech: 'Vercel',
+    classes: 'bg-black/40 border-black/50 text-gray-300',
+  },
 ];

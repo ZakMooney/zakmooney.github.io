@@ -5,7 +5,8 @@ import Button from '../ui/button';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faImages
+  faImages,
+  faArrowUpRightFromSquare,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
@@ -49,6 +50,7 @@ const PortfolioModal = (props) => {
     tech,
     thumbnail,
     link,
+    gitLink,
     images,
   } = jobDetails;
 
@@ -111,15 +113,26 @@ const PortfolioModal = (props) => {
               type="purple"
             />
           ) : null}
-          {link ? (
+          {gitLink ? (
             <Button
-              onClick={() => window.open(link, '_blank').focus()}
+              onClick={() => window.open(gitLink, '_blank').focus()}
               icon={
                 <FontAwesomeIcon
                   icon={faGithub}
                 />  
               }
               text="Git"
+            />
+          ) : null}
+          {link ? (
+            <Button
+              onClick={() => window.open(link, '_blank').focus()}
+              icon={
+                <FontAwesomeIcon
+                  icon={faArrowUpRightFromSquare}
+                />  
+              }
+              text="Visit"
             />
           ) : null}
         </div>

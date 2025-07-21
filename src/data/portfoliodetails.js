@@ -32,6 +32,12 @@ import web3Customised from "../assets/portfolio/WEB3-Customised.png";
 
 import portThumbnail from "../assets/portfolio/PORT-Thumbnail.png";
 
+import gamecabThumbnail from "../assets/portfolio/GAMECAB-Thumbnail.png";
+import gamecabHome from "../assets/portfolio/GAMECAB-Home.png";
+import gamecabCollection from "../assets/portfolio/GAMECAB-Collection.png";
+import gamecabShared from "../assets/portfolio/GAMECAB-Shared.png";
+import gamecabMobile from "../assets/portfolio/GAMECAB-Mobile.png";
+
 export const PortfolioDetails = [
   // {
   //   tag: '', // string used as an identifier
@@ -44,44 +50,48 @@ export const PortfolioDetails = [
   //   thumbnail: null, // image import that you want to use for the work item image.
   //   images: [], // array of image imports for the work item modal's lightbox/gallery
   //   captions: [], // array of strings to be used as captions for the lightbox/gallery images. They are matched by index, so order matters.
-  //   link: '', // optional string that is used for a github button.
+  //   link: '',  // optional string that is used for an external link (e.g live deployment).
+  //   gitLink: '', // optional string that is used for a github button.
   // },
     {
     tag: 'GAME_SHARE',
     title: 'Game Cabinet',
-    company: 'Hobby',
-    description: 'Create & Share Custom Game Collection Lists',
+    company: 'Personal',
+    description: 'Full Stack App for Creating & Sharing Custom Game Collection Lists [www.gamecab.net]',
     date: 'Jul 2025',
     end: 'Current',
     tasks: [
+      'Full stack app using React, Vercel, and Zustand for state management with persistent localstorage integration.',
+      'Integrated with IGDB API for fetching game data.',
+      'Shareable collection system with base64 encoding for easy link sharing.',
       'Focus on simple, customisable, and reusable components.',
-      'Interacts with ethereum contracts on the blockchain.',
-      'Easily brandable .env variables.',
-      'Styled with TailwindCSS & DaisyUI allowing quick and easy theme customisation.',
+      'Optimized API calls and data by selectively storing only essential state properties.',
+      'Styled with TailwindCSS.',
     ],
     mainTech: [
       'React',
     ],
     tech: [
       'React',
+      'Vercel', 
       'Zustand',
       'Tailwind',
-      'API',
     ],
-    thumbnail: web3Vault,
+    thumbnail: gamecabThumbnail,
     images: [
-      web3Showcase,
-      web3VaultList,
-      web3VaultMobile,
-      web3Customised,
+      gamecabHome,
+      gamecabCollection,
+      gamecabShared,
+      gamecabMobile,
     ],
     captions: [
-      'Showcase of the decentralised frontend, explaining it\'s purpose & functionality, showing some of the user interactions, and demonstrating how it can be further easily customised.',
-      'Paginated list of vaults & basic dashboard layout.',
-      'Responsive mobile dashboard layout, and light mode demonstration.',
-      'Example of customised frontend forked from decentralised frontend with additional styles and functionality.',
+      `Home page for GameCab. Includes multiple external API requests Includes a debounced search with additional filters, and one click favouriting buttons.`,
+      `Collection Page. Your custom list of saved games. Stored within your browser's localstorage to reduce api calls.`,
+      `Shared Page. Viewing a shared collection list. Takes collection name and game IDs from the base64 encoded link and fetches the rest of the game data from the external API.`,
+      `Example of the mobile first responsive design.`,
     ],
-    link: 'https://github.com/ZakMooney/defi-tst-dapp',
+    link: 'https://GameCab.net',
+    gitLink: 'https://github.com/ZakMooney/GameCab',
   },
   {
     tag: 'WEB3_DAPP',
@@ -119,7 +129,7 @@ export const PortfolioDetails = [
       'Responsive mobile dashboard layout, and light mode demonstration.',
       'Example of customised frontend forked from decentralised frontend with additional styles and functionality.',
     ],
-    link: 'https://github.com/ZakMooney/defi-tst-dapp',
+    gitLink: 'https://github.com/ZakMooney/defi-tst-dapp',
   },
   {
     tag: 'PORTFOLIO',
@@ -143,7 +153,7 @@ export const PortfolioDetails = [
     thumbnail: portThumbnail,
     images: [],
     captions: [],
-    link: 'https://github.com/ZakMooney/defi-tst-dapp',
+    gitLink: 'https://github.com/ZakMooney/defi-tst-dapp',
   },
   {
     tag: 'VAULT',
@@ -181,7 +191,7 @@ export const PortfolioDetails = [
       'Token list within the user\'s portfolio.',
       'Individual Token\'s stats page.',
     ],
-    link: null,
+    gitLink: null,
   },
   {
     tag: 'MARKETPLACE',
@@ -221,7 +231,7 @@ export const PortfolioDetails = [
       'Mobile responsive demonstration of venue search interface, including search & filter forms, and google map integration.',
       'Full SEO optimised home page for the marketplace, highlighting most popular areas.',
     ],
-    link: null,
+    gitLink: null,
   },
   {
     tag: 'SPLASH_PAGES',
@@ -257,7 +267,7 @@ export const PortfolioDetails = [
       'Customer profiles built using Captive Portal information.',
       'Reporting dashboard with stats and charts.',
     ],
-    link: null,
+    gitLink: null,
   },
   {
     tag: 'MD_DASH',
@@ -291,6 +301,6 @@ export const PortfolioDetails = [
       'Screenshot of a Network summary page, following the Material Design guides.',
       'Video showcasing the user interactions when changing their Brand\'s colour scheme.',
     ],
-    link: null,
+    gitLink: null,
   },
 ];
