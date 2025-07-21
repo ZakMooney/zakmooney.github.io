@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.a2134f97.css",
-    "main.js": "/static/js/main.835837eb.js",
+    "main.css": "/static/css/main.f9811429.css",
+    "main.js": "/static/js/main.0cad2317.js",
     "static/css/195.4dae28ad.chunk.css": "/static/css/195.4dae28ad.chunk.css",
-    "static/js/195.5a1a5868.chunk.js": "/static/js/195.5a1a5868.chunk.js",
+    "static/js/195.846ed3b5.chunk.js": "/static/js/195.846ed3b5.chunk.js",
     "static/media/VAULT-App_Showcase.mp4": "/static/media/VAULT-App_Showcase.d252cf3826dd08613af8.mp4",
     "static/media/PERCHED-Home_Page.png": "/static/media/PERCHED-Home_Page.16c0d723c49681aff730.png",
     "static/media/PERCHED-Venue_Page.png": "/static/media/PERCHED-Venue_Page.a5e7bd04e641868c7d11.png",
     "static/media/WEB3-Showcase.mp4": "/static/media/WEB3-Showcase.1def436714d34edef45f.mp4",
     "static/media/PERCHED-Venue_Interaction.mp4": "/static/media/PERCHED-Venue_Interaction.f0726ccbf02dacfce6d3.mp4",
+    "static/media/GAMECAB-Shared.png": "/static/media/GAMECAB-Shared.7ac5d22ef9322b8632b7.png",
+    "static/media/GAMECAB-Home.png": "/static/media/GAMECAB-Home.707f8bd446d5448c5c99.png",
+    "static/media/GAMECAB-Thumbnail.png": "/static/media/GAMECAB-Thumbnail.f1568c61712216fd7d64.png",
     "static/media/PERCHED-Search.mp4": "/static/media/PERCHED-Search.5165e431a97add454a3d.mp4",
+    "static/media/GAMECAB-Collection.png": "/static/media/GAMECAB-Collection.f3db981bf8b86d46bed1.png",
     "static/media/PERCHED-Venue_Interaction_Mobile.mp4": "/static/media/PERCHED-Venue_Interaction_Mobile.4b869420845af701098c.mp4",
     "static/media/PERCHED-Thumbnail.png": "/static/media/PERCHED-Thumbnail.a0c05ad2e13ca8879507.png",
     "static/media/WEB3-Customised.png": "/static/media/WEB3-Customised.8767eed48bdc3f5a6e9e.png",
     "static/media/PORT-Thumbnail.png": "/static/media/PORT-Thumbnail.8f4ee1b5d9c28d9ffb38.png",
     "static/media/VAULT-Home.png": "/static/media/VAULT-Home.72bc96da1c1e6ab19c97.png",
+    "static/media/GAMECAB-Mobile.png": "/static/media/GAMECAB-Mobile.511e245fd3b4ba9219f0.png",
     "static/media/PERCHED-Search_Mobile.mp4": "/static/media/PERCHED-Search_Mobile.9447ec04cf74cce2b81d.mp4",
     "static/media/VAULT-Token_List.png": "/static/media/VAULT-Token_List.f1f612b4747e201f961b.png",
     "static/media/CT-New_Location.mp4": "/static/media/CT-New_Location.8aa4a52636b0c1c5dd1f.mp4",
@@ -36,13 +41,13 @@
     "static/media/astronaut.png": "/static/media/astronaut.18df5468d393609a45c5.png",
     "static/media/man.png": "/static/media/man.9027986bf27eaa4f2fa5.png",
     "index.html": "/index.html",
-    "main.a2134f97.css.map": "/static/css/main.a2134f97.css.map",
-    "main.835837eb.js.map": "/static/js/main.835837eb.js.map",
+    "main.f9811429.css.map": "/static/css/main.f9811429.css.map",
+    "main.0cad2317.js.map": "/static/js/main.0cad2317.js.map",
     "195.4dae28ad.chunk.css.map": "/static/css/195.4dae28ad.chunk.css.map",
-    "195.5a1a5868.chunk.js.map": "/static/js/195.5a1a5868.chunk.js.map"
+    "195.846ed3b5.chunk.js.map": "/static/js/195.846ed3b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2134f97.css",
-    "static/js/main.835837eb.js"
+    "static/css/main.f9811429.css",
+    "static/js/main.0cad2317.js"
   ]
 }
