@@ -36,9 +36,6 @@ const LatestProject = (props) => {
               <h3 className="text-xl font-medium drop-shadow-sm pb-2">
                 {title || ''}
               </h3>
-              {/* <div className="flex flex-1 flex-wrap justify-end gap-2 pl-4">
-                {techLoop}
-              </div> */}
             </div>
             <h4 className="w-full text-md font-light italic drop-shadow-sm pb-2 opacity-80">
               {description || ''}
@@ -50,15 +47,16 @@ const LatestProject = (props) => {
               {techLoop}
             </div>
           </div>
-          <div className="w-full flex justify-end mt-4">
+        </div>
+      </div>
+                <div className="w-full flex justify-end mt-4">
             <Button
               text="See More"
               linkTo="/portfolio"
               type="purple"
             />
           </div>
-        </div>
-      </div>
+
     </>
   );
 }
