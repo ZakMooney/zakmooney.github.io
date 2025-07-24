@@ -26,7 +26,7 @@ const LatestProject = (props) => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row w-full">
         <div className="flex-1 min-h-[200px] max-h-[200px] md:max-w-[300px] md:h-full md:max-h-none bg-slate-700/50 overflow-hidden mb-4 md:mb-0 md:mr-4 rounded">
           <img src={thumbnail || ''} alt={title || ''} className="h-full w-full object-cover"></img>
         </div>
