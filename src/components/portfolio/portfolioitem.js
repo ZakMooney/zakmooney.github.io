@@ -32,7 +32,7 @@ const PortfolioItem = (props) => {
       <h4 className="w-full text-md font-light italic drop-shadow-sm pb-2 opacity-80">
         {description || ''}
       </h4>
-      <div className="w-full flex items-end mt-2">
+      <div className="w-full flex justify-end mt-2">
         <Button
           onClick={() => handleOpenModal(tag)}
           text="See More"

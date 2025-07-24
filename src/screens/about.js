@@ -2,9 +2,11 @@ import React from 'react';
 
 import astronaut from '../assets/emoji/astronaut.png';
 import { JobDetails } from '../data/jobdetails';
+import { PortfolioDetails } from '../data/portfoliodetails';
 
 import Card from '../components/ui/card';
 import ExperienceItem from '../components/experience/experienceitem';
+import LatestProject from '../components/portfolio/latestproject';
 import Button from '../components/ui/button';
 
 function About() {
@@ -28,18 +30,26 @@ function About() {
           </p>
         </div>
       </Card>
+
       <h1 className="text-3xl font-medium drop-shadow-sm mb-4 mt-8">
         Latest Experience
       </h1>
       <Card className="mb-4">
         <ExperienceItem jobDetails={JobDetails[0]} />
-        <div className="w-full flex justify-start mt-4">
+        <div className="w-full flex justify-end mt-4">
           <Button
             text="See More"
             linkTo="/experience"
             type="purple"
           />
         </div>
+      </Card>
+
+      <h1 className="text-3xl font-medium drop-shadow-sm mb-4 mt-8">
+        Latest Project
+      </h1>
+      <Card className="mb-4">
+        <LatestProject jobDetails={PortfolioDetails[0]} />
       </Card>
 
       <h1 className="text-3xl font-medium drop-shadow-sm mb-4 mt-8">
@@ -71,7 +81,7 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="w-full flex justify-start mt-4">
+        <div className="w-full flex justify-end mt-4">
           <Button
             text="See More"
             linkTo="/experience"
